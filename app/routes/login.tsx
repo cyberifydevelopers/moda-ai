@@ -1,5 +1,5 @@
 import type { Route } from "./+types/login";
-import { Login } from "~/auth/login";
+import { Login } from "../auth/login";
 
 export function meta({}: Route.MetaArgs) {
   return [
