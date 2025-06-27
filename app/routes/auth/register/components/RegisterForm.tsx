@@ -70,20 +70,22 @@ export function RegisterForm() {
     setIsSubmitting(true);
 
     try {
-      await authClient.signUp.email(
-        formData,
-        {
-          onRequest: (ctx) => {
-            // show loading state
-          },
-          onSuccess: (ctx) => {
-            // redirect to home
-          },
-          onError: (ctx) => {
-            alert(ctx.error)
-          },
-        },
-      )
+      
+      // await authClient.signUp.email(
+      //   formData,
+      //   {
+      //     onRequest: (ctx) => {
+      //       // show loading state
+      //     },
+      //     onSuccess: (ctx) => {
+      //       // redirect to home
+      //     },
+      //     onError: (ctx) => {
+      //       alert(ctx.error)
+      //     },
+      //   },
+      // )
+
 
       // Registration successful
       navigate("/dashboard");
