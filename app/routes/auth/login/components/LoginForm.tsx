@@ -1,9 +1,10 @@
 import { useNavigate } from "react-router";
-import logoDark from "../welcome/logo-dark.svg";
-import logoLight from "../welcome/logo-light.svg";
+import logoDark from "~/welcome/logo-dark.svg";
+import logoLight from "~/welcome/logo-light.svg";
 
-export function Login() {
+export function LoginForm() {
   const navigate = useNavigate();
+
   return (
     <main className="flex min-h-screen items-center justify-center bg-white dark:bg-gray-950 px-4">
       <div className="w-full max-w-md p-8 rounded-3xl shadow-xl border border-gray-200 dark:border-gray-800 bg-white dark:bg-gray-900 flex flex-col items-center gap-8">

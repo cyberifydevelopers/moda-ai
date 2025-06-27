@@ -1,5 +1,5 @@
-import ForgotPassword from "~/auth/forgot-password";
-import type { Route } from "./+types/forgot-password";
+import type { Route } from "./+types";
+import ForgotPasswordForm from "./components/ForgotPasswordForm";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -9,5 +9,5 @@ export function meta({}: Route.MetaArgs) {
 }
 
 export default function ForgotPasswordPage() {
-  return <ForgotPassword />;
+  return <ForgotPasswordForm />;
 }
